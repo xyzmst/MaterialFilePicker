@@ -17,6 +17,7 @@ public class FileTPatternUtils {
     public static String[] EXCEL = {"xls", "xlk", "xlsb", "xlsm", "xlsx", "xlr", "xltm", "xlw", "numbers", "ods", "ots"};
     public static String[] IMAGE = {"bmp", "gif", "ico", "jpeg", "jpg", "pcx", "png", "psd", "tga", "tiff", "tif", "xcf"};
     public static String[] MUSIC = {"aiff", "aif", "wav", "flac", "m4a", "wma", "amr", "mp2", "mp3", "wma", "aac", "mid", "m3u"};
+    public static String[] AUDIO = {"mp3", "aac"};
     public static String[] VIDEO = {"avi", "mov", "wmv", "mkv", "3gp", "f4v", "flv", "mp4", "mpeg", "webm"};
     public static String[] PDF = {"pdf"};
     public static String[] POWER_POINT = {"pptx", "keynote", "ppt", "pps", "pot", "odp", "otp"};
@@ -78,5 +79,9 @@ public class FileTPatternUtils {
 
     public static Pattern APKPattern() {
         return makePattern(APK);
+    }
+
+    public static Pattern AUDIOPattern() {
+        return makePattern(AUDIO);
     }
 }
