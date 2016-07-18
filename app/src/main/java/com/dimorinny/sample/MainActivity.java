@@ -7,8 +7,7 @@ import android.util.Log;
 
 import com.nbsp.materialfilepicker.MaterialFilePicker;
 import com.nbsp.materialfilepicker.ui.FilePickerActivity;
-
-import java.util.regex.Pattern;
+import com.nbsp.materialfilepicker.utils.FileTPatternUtils;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
                 .withActivity(this)
                 .withRequestCode(1)
                 .withFilterDirectories(false)
-                .withFilter(Pattern.compile(".*\\.txt$"))
+                .withFilter(FileTPatternUtils.MUSICPattern())
                 .withHiddenFiles(true)
                 .start();
     }
