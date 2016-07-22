@@ -53,7 +53,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 }
 ```
 
-增加 类型支持的正则，方便引用
+add FileTPatternUtils to easy use
 ```java
 new MaterialFilePicker()
     .withActivity(this)
