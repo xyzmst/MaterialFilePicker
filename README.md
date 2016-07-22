@@ -52,3 +52,15 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     }
 }
 ```
+
+增加 类型支持的正则，方便引用
+```java
+new MaterialFilePicker()
+    .withActivity(this)
+    .withRequestCode(1)
+    .withFilter(FileTPatternUtils.MUSICPattern()) // Filtering files and directories by file name using regexp
+    .withFilterDirectories(true) // Set directories filterable (false by default)
+    .withHiddenFiles(true) // Show hidden files and folders
+    .start();
+```
+
